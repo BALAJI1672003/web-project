@@ -1,0 +1,111 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+    animation: nav 4s ease-in-out;
+
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600; 
+}
+.main
+{
+    width: 100%;
+    display: flex;
+}
+.content
+{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color: white;
+    overflow: hidden;
+    animation: content 4s ease-in-out;
+}
+.content h1
+{
+    font-size: 80px;
+    margin-bottom: 1%;
+    letter-spacing: 8px;
+}
+.content h3
+{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.content p
+{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+button
+{
+    padding: 15px 20px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-top: 8%;
+}
+button:hover
+{
+ background-color: red;   
+}
+.image
+{
+    width: 50%;
+    margin-top: 8%;
+    z-index: -1;
+}
+img
+{
+ width: 40rem;
+ animation: car 5s ease-in-out;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+}
+@keyframes car {
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-250%);
+    }
+    
+}
+@keyframes content
+{
+   0%
+   {
+    opacity: 0%;
+     transform: tarnslateX(-50%);
+   }    
+}
+@keyframes nav
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+}
